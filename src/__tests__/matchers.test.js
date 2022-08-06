@@ -1,7 +1,7 @@
 import healthPlayer from '../matchers';
 
 test('health sort', () => {
-  const arr = [
+  const array = [
     { name: 'мечник', health: 10 },
     { name: 'маг', health: 100 },
     { name: 'лучник', health: 80 },
@@ -11,6 +11,6 @@ test('health sort', () => {
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
   ];
-  const result = healthPlayer(arr);
+  const result = healthPlayer(array);
   expect(result).toEqual(answer);
 });
